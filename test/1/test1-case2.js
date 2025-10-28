@@ -22,7 +22,7 @@ exec('git pull', { cwd: repoPath }, (error, stdout, stderr) => {
         const SRC_NAME3 =  'test3-case1.js';
         const DEST_NAME3 = 'test3Formal.js';
         const srcPath3 = path.join(__dirname, '..', '3', SRC_NAME3);
-        const destPath3 = path.join(__dirname, '..', '2', DEST_NAME3);
+        const destPath3 = path.join(__dirname, '..', '3', DEST_NAME3);
         fs.copyFileSync(srcPath3, destPath3);
     }, 3000)
 });
