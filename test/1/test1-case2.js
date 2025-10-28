@@ -4,7 +4,6 @@ const path = require('path');
 const fs = require('fs');
 // 配置你的仓库路径，请替换为你的实际路径
 const repoPath = path.resolve('/test');
-
 exec('git pull', { cwd: repoPath }, (error, stdout, stderr) => {
     setTimeout(() => {
         const SRC_NAME1 =  'test1-case1.js';
